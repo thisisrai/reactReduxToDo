@@ -12,9 +12,8 @@ const reminder = (action) => {
 
 const removeByID = (state = [], id) => {
     const reminders = state.filter(reminder => {
-        reminder.id !== id
+        return reminder.id !== id
     })
-    console.log('new reduced reminders', reminders)
     return reminders 
 } 
 
